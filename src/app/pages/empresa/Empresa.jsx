@@ -1,6 +1,10 @@
+import { Link } from "react-router";
 
 export const Empresa = () => {
     return (
-        <div>Empresa</div>
+        <div>
+            <Link to={'/'}>&lt;</Link>
+            <div>Empresa</div>
+        </div>
     )
 }
