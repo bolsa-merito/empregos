@@ -60,7 +60,7 @@ Para manter o histórico de commits organizado, por favor, use o seguinte padrã
 * `fix: ` para corrigir bugs;
 * `docs: ` para atualizar a documentação;
 * `style: ` para atualizar a formatação do código;
-* `refactor: ` para refatorar o código;
+* `refac: ` para refatorar o código;
 * `perf: ` para melhorar o desempenho;
 * `test: ` para adicionar testes.
 
