@@ -21,7 +21,7 @@ Para instalar o projeto, siga os passos abaixo:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/[nome-do-repositorio].git
+git clone https://github.com/hugobatista27/codinome-tinder-emprego
 ```
 2. Acesse o diretório do projeto:
 ```bash
