@@ -19,15 +19,19 @@ Para instalar o projeto, siga os passos abaixo:
 
 ### Passos de instalação
 
-1. Clone o repositório:
+1. Acesse a pasta onde você quer que o projeto seja salvo em seu computador:
 ```bash
-git clone https://github.com/hugobatista27/codinome-tinder-emprego
+cd [caminho-da-sua-pasta]
 ```
-2. Acesse o diretório do projeto:
+2. Clone o repositório:
 ```bash
-cd [nome-do-projeto]
+git clone https://github.com/bolsa-merito/empregos
 ```
-3. Instale as dependências:
+3. Acesse a pasta do projeto:
+```bash
+cd empregos
+```
+4. Instale as dependências:
 ```bash
 npm install
 ```
