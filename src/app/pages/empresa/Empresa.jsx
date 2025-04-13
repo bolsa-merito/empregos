@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import CardEstudante from "../../components/estudante/CardEstudantes";
+import { ButtonPrimary } from "../../components/common/Buttons";
+import { InputText } from "../../components/common/Inputs";
 
 function CardEstudanteView() {
     return (
@@ -20,9 +22,12 @@ export const Empresa = () => {
             <div>Empresa</div>
             <div style={{display: "flex", flexDirection: "column", gap: 8}}>  
                 <CardEstudanteView/>
-                <CardEstudanteView/>
-                <CardEstudanteView/>
             </div>
+            {/* Testando os componentes */}
+            <ButtonPrimary>
+                <p>Salvar</p>
+            </ButtonPrimary>
+            <InputText textLabel={"Nome"} placeholderText={"Digite seu nome"}/>
         </div>
     )
 }

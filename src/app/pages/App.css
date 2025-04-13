@@ -13,3 +13,12 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+
+.btn-primary {
+  background-color: black;
+  border-radius: 8px;
+  color: white;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+}
