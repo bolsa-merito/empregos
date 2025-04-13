@@ -11,14 +11,14 @@ export default function CardEstudante({children}){
 function Banner() {
     return (
         <div className={styles.banner}>
-            <img src="." alt="banner estudante" />
+            <img  src="https://s4.static.brasilescola.uol.com.br/be/2023/08/dia-do-estudante.jpg" alt="banner estudante" />
         </div>
     )
 }
 
 function Nome() {
     return (
-        <h2 className={styles.nomeEstudante}>Nome</h2>
+        <h2 className={styles.nomeEstudante} style={{fontSize: 16}}>Nome</h2>
     )
 }
 
