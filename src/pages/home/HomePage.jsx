@@ -5,7 +5,7 @@ function HomePage() {
 		<div>
 			Landing page
 			<div className='flex flex-col'>
-				<Link to={'/estudante'}>Procuro uma vaga de estágio</Link>
+				<Link to={'/estudante/home'}>Procuro uma vaga de estágio</Link>
 				<Link to={'/empresa'}>Procuro um estagiário</Link>
 			</div>
 		</div>
