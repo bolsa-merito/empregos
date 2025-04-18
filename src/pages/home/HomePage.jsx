@@ -1,15 +1,10 @@
-import './App.css'
 import { Link } from 'react-router'
 
-/**
- * Raiz do projeto
- * @returns {String} HTML
- */
-function Index() {
+function HomePage() {
 	return (
 		<div>
 			Landing page
-			<div>
+			<div className='flex flex-col'>
 				<Link to={'/estudante'}>Procuro uma vaga de estágio</Link>
 				<Link to={'/empresa'}>Procuro um estagiário</Link>
 			</div>
@@ -17,4 +12,4 @@ function Index() {
 	)
 }
 
-export default Index
+export default HomePage
