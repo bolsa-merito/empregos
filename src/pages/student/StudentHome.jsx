@@ -3,9 +3,7 @@ import StudentLayout from "@/components/layouts/StudentLayout"
 
 function StudentHome() {
     return (
-        <StudentLayout>
-            <Link to={'/'}>&lt;</Link>
-        </StudentLayout>
+        <Link to={'/'}>&lt;</Link>
     )
 }
 
