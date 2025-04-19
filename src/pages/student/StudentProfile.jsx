@@ -1,8 +1,12 @@
-import StudentLayout from "@/components/layouts/StudentLayout"
+import ProfileInfoComponent from "@/features/student/components/profilePage/ProfileInfo"
 
 function StudentProfile() {
     return (
-        <div>StudentProfile</div>
+        <div>
+            <ProfileInfoComponent>
+
+            </ProfileInfoComponent>
+        </div>
     )
 }
 
