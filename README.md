@@ -1,8 +1,16 @@
-# Codinome - Tinder Emprego
+#  👔 Tinder Emprego
 
-**Descrição**
+**📄Descrição**
 
-Este é um projeto [breve descrição do projeto]. </br>
+   O projeto Empregos é uma plataforma inovadora que conecta empresas e candidatos de forma dinâmica e interativa, inspirada no modelo de aplicativos de relacionamento como o Tinder. Seu principal objetivo é facilitar o processo de recrutamento e busca por oportunidades de trabalho, promovendo "matches" entre vagas disponíveis e profissionais em busca de emprego. 
+ </br>
+ </br>
+
+![image](https://github.com/user-attachments/assets/183d8ea6-5056-40b7-b3d8-3289c6cd1fa0)
+
+
+ </br>
+
 Ele foi desenvolvido utilizando:
 * React
 * Vite
