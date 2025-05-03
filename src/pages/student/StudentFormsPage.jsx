@@ -1,9 +1,6 @@
 import {
-    DescriptionForm,
-    EducationForm,
-    ExperienceForm,
     PersonalInfoForm
-  } from '@/features/student/components'
+  } from '@/features/student/components/forms/PersonalInfoForm';
   
   export function StudentFormsPage() {
     return (
@@ -11,9 +8,9 @@ import {
         <h1 className="text-2xl mb-6">Perfil do Estudante</h1>
         
         <PersonalInfoForm />
-        <EducationForm />
+        {/* <EducationForm />
         <ExperienceForm />
-        <DescriptionForm />
+        <DescriptionForm /> */}
       </div>
     )
   }

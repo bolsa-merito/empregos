@@ -4,6 +4,7 @@ import HomePage from "@/pages/home/HomePage";
 import StudentLayout from "@/components/layouts/StudentLayout"
 import StudentHome from "@/pages/student/StudentHome";
 import StudentProfile from "@/pages/student/StudentProfile";
+import { StudentFormsPage } from "../pages/student/StudentFormsPage";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
             {
                 path: 'perfil',
                 element: <StudentProfile/>
-            }
+            },
+            {
+                path: 'formulario',
+                element: <StudentFormsPage/>
+            },
         ]
     },
     {

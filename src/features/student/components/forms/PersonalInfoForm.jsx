@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Input, Textarea } from '@/components/ui/Inputs';
-import { Button } from '@/components/ui/Buttons';
+import  Textarea  from '@/app/components/ui/Inputs/Textarea';
+import  Input  from '@/app/components/ui/Inputs/Input';
+import  Button  from '@/app/components/ui/Buttons/Buttons';
 
-export function ExperienceForm({ onSave }) {
+export function PersonalInfoForm({ onSave }) {
   const [items, setItems] = useState([
     { title: '', description: '', skills: '' }
   ]);
