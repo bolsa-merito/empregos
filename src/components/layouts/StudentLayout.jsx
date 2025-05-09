@@ -6,9 +6,9 @@ function StudentLayout() {
         <div className="w-full flex flex-col items-center">
             <div className="w-full max-w-xs">
                 <NavBar>
-                    <NavBar.LinkHome>Home</NavBar.LinkHome>
-                    <NavBar.LinkPerfil>Perfil</NavBar.LinkPerfil>
-                    <NavBar.LinkMessages>Mensagens</NavBar.LinkMessages>
+                    <NavBar.LinkHome redirectTo="/estudante/home">Home</NavBar.LinkHome>
+                    <NavBar.LinkPerfil redirectTo="/estudante/perfil">Perfil</NavBar.LinkPerfil>
+                    <NavBar.LinkMessages redirectTo="/estudante/mensagens">Mensagens</NavBar.LinkMessages>
                 </NavBar>
                 <div>
                     <Outlet />

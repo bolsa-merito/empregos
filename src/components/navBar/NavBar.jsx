@@ -27,31 +27,31 @@ function MenuIcon({image, alt}) {
     )
 }
 
-NavBar.LinkHome = function NavBarLinkHome() {
+NavBar.LinkHome = function NavBarLinkHome({redirectTo}) {
     const location = useLocation();
 
     return (
-        <NavBarLink url="/estudante/home" isActive={location.pathname === "/estudante/home"}>
+        <NavBarLink url={redirectTo} isActive={location.pathname === redirectTo}>
             <MenuIcon image={homeIcon} alt="Home" />
         </NavBarLink>
     )
 }
 
-NavBar.LinkPerfil = function NavBarLinkPerfil() {
+NavBar.LinkPerfil = function NavBarLinkPerfil({redirectTo}) {
     const location = useLocation();
 
     return (
-        <NavBarLink url="/estudante/perfil" isActive={location.pathname === "/estudante/perfil"}>
+        <NavBarLink url={redirectTo} isActive={location.pathname === redirectTo}>
             <MenuIcon image={perfilIcon} alt="Perfil" />
         </NavBarLink>
     )
 }
 
-NavBar.LinkMessages = function NavBarLinkMessages() {
+NavBar.LinkMessages = function NavBarLinkMessages({redirectTo}) {
     const location = useLocation();
 
     return (
-        <NavBarLink url={"/estudante/mensagens"} isActive={location.pathname === "/estudante/mensagens"}>
+        <NavBarLink url={redirectTo} isActive={location.pathname === redirectTo}>
             <MenuIcon image={messageIcon} alt="Mensagens" />
         </NavBarLink>
     )
