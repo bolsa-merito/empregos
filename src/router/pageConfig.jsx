@@ -5,6 +5,10 @@ import StudentLayout from "@/components/layouts/StudentLayout"
 import StudentHome from "@/pages/student/StudentHome";
 import StudentProfile from "@/pages/student/StudentProfile";
 
+import CompanyLayout from "@/components/layouts/CompanyLayout"
+import CompanyHome from "@/pages/company/CompanyHome";
+import CompanyProfile from "@/pages/company/CompanyProfile";
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -37,7 +41,17 @@ const router = createBrowserRouter([
     },
     {
         path: '/empresa',
-        element: <div>Empresa</div>
+        element: <CompanyLayout/>,
+        children: [
+            {
+                path: 'home',
+                element: <CompanyHome/>
+            },
+            {
+                path: 'perfil',
+                element: <CompanyProfile/>
+            }
+        ]
     },
 ]);
 
