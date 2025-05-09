@@ -4,7 +4,9 @@ import HomePage from "@/pages/home/HomePage";
 import StudentLayout from "@/components/layouts/StudentLayout"
 import StudentHome from "@/pages/student/StudentHome";
 import StudentProfile from "@/pages/student/StudentProfile";
-import { StudentFormsPage } from "../pages/student/StudentFormsPage";
+import { StudentProjectsPage } from "../pages/student/StudentProjectsPage";
+import { StudentFormationFormPage } from "../pages/student/StudentFormationFormPage";
+import { StudentDescriptionFormPage } from "../pages/student/StudentDescriptionFormPage";
 
 const router = createBrowserRouter([
     {
@@ -35,9 +37,18 @@ const router = createBrowserRouter([
                 element: <StudentProfile/>
             },
             {
-                path: 'formulario',
-                element: <StudentFormsPage/>
+                path: 'projetos',
+                element: <StudentProjectsPage/>
             },
+            {
+                path: 'formacao', 
+                element: <StudentFormationFormPage />
+              },
+              {
+                path: 'teste',
+                element: <StudentDescriptionFormPage />
+              },
+        
         ]
     },
     {
