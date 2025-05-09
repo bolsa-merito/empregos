@@ -1,5 +1,5 @@
-import ProfileInfoComponent from "@/features/student/components/profilePage/ProfileInfo"
-import {ProfileAbout, ProfileProjects, ProfileEducation} from "@/features/student/components/profilePage/ProfileAbout"
+import ProfileInfoComponent from "@/features/student/components/profileInfo/ProfileInfo"
+import {ProfileAbout, ProfileProjects, ProfileEducation} from "@/features/student/components/profileInfo/ProfileAbout"
 
 function StudentProfile() {
     return (
