@@ -7,6 +7,7 @@ import StudentProfile from "@/pages/student/StudentProfile";
 import { StudentProjectsPage } from "../pages/student/StudentProjectsPage";
 import { StudentFormationFormPage } from "../pages/student/StudentFormationFormPage";
 import { StudentDescriptionFormPage } from "../pages/student/StudentDescriptionFormPage";
+import { StudentProfileFormPage } from "../pages/student/StudentProfileFormPage";
 
 const router = createBrowserRouter([
     {
@@ -45,9 +46,13 @@ const router = createBrowserRouter([
                 element: <StudentFormationFormPage />
               },
               {
-                path: 'teste',
+                path: 'descricao',
                 element: <StudentDescriptionFormPage />
               },
+            {
+                path: 'formulario',
+                element: <StudentProfileFormPage />
+              }
         
         ]
     },
