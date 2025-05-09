@@ -86,7 +86,6 @@ export function ProfileForm({ onSave }) {
           </div>
         </div>
 
-        {/* Seção de Upload de Imagem com estilo do primeiro exemplo */}
         <div>
           <label className="block text-gray-700 font-medium mb-2">Upload de imagem</label>
           <div className="flex items-center space-x-4">
