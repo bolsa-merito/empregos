@@ -25,12 +25,12 @@ export function ProjectsForm({ onSave }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full max-w-full space-y-6 p-8 bg-gradient-to-r from-[#E8F2FD] to-white rounded-2xl shadow-lg"
+      className="w-full max-w-full space-y-6 p-4 bg-white rounded"
     >
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="w-full relative bg-white border-l-4 border-[#005EB8] p-6 rounded-xl space-y-4 shadow hover:shadow-xl transition-transform hover:-translate-y-1"
+          className="w-full relative p-4 bg-white rounded space-y-4"
         >
           {items.length > 1 && (
             <button
@@ -80,7 +80,7 @@ export function ProjectsForm({ onSave }) {
         <Button
           type="submit"
           variant="solid"
-          className="bg-[#005EB8] hover:bg-[#004a9f] text-white px-6 py-2 rounded-lg"
+          className="bg-[#E8F2FD] hover:bg-[#D0E4FB]  font-medium px-4 py-2 rounded"
         >
           Salvar
         </Button>
