@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1,
+    "full_name": "João Silva",
+    "description": "Software engineering student, passionate about web development and UI design.",
+    "seeking_internship": true,
+    "course": {
+      "name": "Software Engineering",
+      "institution": "Federal University of Technology",
+      "period": "Evening",
+      "semester": 6
+    },
+    "certificates": [
+      {
+        "course_name": "Web Development",
+        "hours": "40h",
+        "institution": "Alura"
+      },
+      {
+        "course_name": "Git and GitHub",
+        "hours": "20h",
+        "institution": "Digital Innovation One"
+      }
+    ],
+    "contact": {
+      "email": "joao.silva@email.com",
+      "phone": "(11) 91234-5678"
+    },
+    "favorited": true,
+    "connection_status": "accepted"
+  },
+  {
+    "id": 2,
+    "full_name": "Maria Oliveira",
+    "description": "Computer science student focused on backend development and databases.",
+    "seeking_internship": false,
+    "course": {
+      "name": "Computer Science",
+      "institution": "State University of São Paulo",
+      "period": "Morning",
+      "semester": 4
+    },
+    "certificates": [
+      {
+        "course_name": "Java Programming",
+        "hours": "60h",
+        "institution": "Udemy"
+      }
+    ],
+    "contact": null,
+    "favorited": false,
+    "connection_status": "pending"
+  },
+  {
+    "id": 3,
+    "full_name": "Carlos Mendes",
+    "description": "Information systems student with interest in cybersecurity and cloud computing.",
+    "seeking_internship": true,
+    "course": {
+      "name": "Information Systems",
+      "institution": "Catholic University",
+      "period": "Afternoon",
+      "semester": 7
+    },
+    "certificates": [],
+    "contact": {
+      "email": "carlos.mendes@email.com",
+      "phone": "(21) 99876-5432"
+    },
+    "favorited": true,
+    "connection_status": "accepted"
+  }
+]
