@@ -9,6 +9,10 @@ import { StudentFormationFormPage } from "../pages/student/StudentFormationFormP
 import { StudentDescriptionFormPage } from "../pages/student/StudentDescriptionFormPage";
 import { StudentProfileFormPage } from "../pages/student/StudentProfileFormPage";
 
+import CompanyLayout from "@/components/layouts/CompanyLayout"
+import CompanyHome from "@/pages/company/CompanyHome";
+import CompanyProfile from "@/pages/company/CompanyProfile";
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -58,7 +62,17 @@ const router = createBrowserRouter([
     },
     {
         path: '/empresa',
-        element: <div>Empresa</div>
+        element: <CompanyLayout/>,
+        children: [
+            {
+                path: 'home',
+                element: <CompanyHome/>
+            },
+            {
+                path: 'perfil',
+                element: <CompanyProfile/>
+            }
+        ]
     },
 ]);
 

@@ -1,11 +1,13 @@
-import ProfileInfoComponent from "@/features/student/components/profilePage/ProfileInfo"
+import ProfileInfoComponent from "@/features/student/components/profileInfo/ProfileInfo"
+import {ProfileAbout, ProfileProjects, ProfileEducation} from "@/features/student/components/profileInfo/ProfileAbout"
 
 function StudentProfile() {
     return (
-        <div>
-            <ProfileInfoComponent>
-
-            </ProfileInfoComponent>
+        <div className="flex flex-col gap-6">
+            <ProfileInfoComponent/>
+            <ProfileAbout/>
+            <ProfileProjects/>
+            <ProfileEducation/>
         </div>
     )
 }
