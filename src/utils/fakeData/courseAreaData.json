@@ -1,0 +1,8 @@
+[
+  { "id": 2, "name": "Saúde" },
+  { "id": 3, "name": "Engenharias" },
+  { "id": 4, "name": "Ciências Exatas" },
+  { "id": 5, "name": "Ciências Humanas" },
+  { "id": 6, "name": "Ciências Sociais Aplicadas" },
+  { "id": 7, "name": "Linguística e Letras" }
+]
