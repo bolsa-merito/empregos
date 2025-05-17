@@ -8,6 +8,7 @@ import StudentProfile from "@/pages/student/StudentProfile";
 import CompanyLayout from "@/components/layouts/CompanyLayout"
 import CompanyHome from "@/pages/company/CompanyHome";
 import CompanyProfile from "@/pages/company/CompanyProfile";
+import FilterStudents from "@/pages/company/FilterStudents";
 
 const router = createBrowserRouter([
     {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
             {
                 path: 'perfil',
                 element: <CompanyProfile/>
+            },
+            {
+                path: 'filtro-estudantes',
+                element: <FilterStudents/>
             }
         ]
     },
