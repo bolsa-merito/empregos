@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router"
 import homeIcon from "@/assets/headerIcons/home-icon.svg"
 import messageIcon from "@/assets/headerIcons/message-icon.svg"
 import perfilIcon from "@/assets/headerIcons/perfil-icon.svg"
+import { BriefcaseBusiness, House, User, Send } from "lucide-react"
 
 // TODO Implementar a lógica de navegação, criar as páginas e adicionar os links
 
@@ -21,18 +22,12 @@ function NavBarLink({isActive, url, children}) {
     )
 }
 
-function MenuIcon({image, alt}) {
-    return (
-        <img src={image} alt={alt} />
-    )
-}
-
 NavBar.LinkHome = function NavBarLinkHome({redirectTo}) {
     const location = useLocation();
 
     return (
         <NavBarLink url={redirectTo} isActive={location.pathname === redirectTo}>
-            <MenuIcon image={homeIcon} alt="Home" />
+            <House size={32} strokeWidth={1.3}/>
         </NavBarLink>
     )
 }
@@ -42,7 +37,7 @@ NavBar.LinkPerfil = function NavBarLinkPerfil({redirectTo}) {
 
     return (
         <NavBarLink url={redirectTo} isActive={location.pathname === redirectTo}>
-            <MenuIcon image={perfilIcon} alt="Perfil" />
+            <User size={32} strokeWidth={1.3}/>
         </NavBarLink>
     )
 }
@@ -52,7 +47,17 @@ NavBar.LinkMessages = function NavBarLinkMessages({redirectTo}) {
 
     return (
         <NavBarLink url={redirectTo} isActive={location.pathname === redirectTo}>
-            <MenuIcon image={messageIcon} alt="Mensagens" />
+            <Send size={32} strokeWidth={1.3}/>
+        </NavBarLink>
+    )
+}
+
+NavBar.LinkHiring = function NavBarLinkHiring({redirectTo}) {
+    const location = useLocation();
+
+    return (
+        <NavBarLink url={redirectTo} isActive={location.pathname === redirectTo}>
+            <BriefcaseBusiness size={32} strokeWidth={1.3}/>
         </NavBarLink>
     )
 }

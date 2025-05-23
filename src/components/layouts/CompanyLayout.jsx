@@ -11,7 +11,7 @@ function CompanyLayout() {
         <div className="w-full flex flex-col items-center">
             <div className="w-full md:max-w-screen max-w-xs">
                 <NavBar>
-                    <NavBar.LinkHome redirectTo="/empresa/home">Home</NavBar.LinkHome>
+                    <NavBar.LinkHiring redirectTo="/empresa/home">Home</NavBar.LinkHiring>
                     <NavBar.LinkPerfil redirectTo="/empresa/perfil">Perfil</NavBar.LinkPerfil>
                     <NavBar.LinkMessages redirectTo="/empresa/mensagens">Mensagens</NavBar.LinkMessages>
                 </NavBar>

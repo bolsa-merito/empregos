@@ -1,9 +1,9 @@
 import { Link } from "react-router"
-import StudentLayout from "@/components/layouts/StudentLayout"
+import { ChevronLeft } from "lucide-react"
 
 function StudentHome() {
     return (
-        <Link to={'/'}>&lt;</Link>
+        <Link to={'/'}><ChevronLeft /></Link>
     )
 }
 

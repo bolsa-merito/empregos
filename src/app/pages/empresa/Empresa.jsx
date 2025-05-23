@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import CardEstudante from "../../components/estudante/CardEstudantes";
 import { ButtonPrimary } from "../../components/common/Buttons";
 import { InputText } from "../../components/common/Inputs";
+import { ChevronLeft } from "lucide-react";
 
 function CardEstudanteView() {
     return (
@@ -18,7 +19,7 @@ function CardEstudanteView() {
 export const Empresa = () => {
     return (
         <div>
-            <Link to={'/'}>&lt;</Link>
+            <Link to={'/'}><ChevronLeft /></Link>
             <div>Empresa</div>
             <div style={{display: "flex", flexDirection: "column", gap: 8}}>  
                 <CardEstudanteView/>
