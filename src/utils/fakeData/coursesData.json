@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Administração", "area_id": 6 },
+  { "id": 2, "name": "Enfermagem", "area_id": 2 },
+  { "id": 3, "name": "Engenharia de Software", "area_id": 3 },
+  { "id": 4, "name": "Matemática", "area_id": 4 },
+  { "id": 5, "name": "Sociologia", "area_id": 5 },
+  { "id": 6, "name": "Linguística e Letras", "area_id": 7 }
+]
