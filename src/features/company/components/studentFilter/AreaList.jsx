@@ -2,12 +2,20 @@ import {getAreas} from "../../services/fetchCourses.js";
 import { useEffect, useState } from "react";
 import FilterTag from "./FilterTag.jsx";
 import { useStudentFilter } from "@/features/company/hooks/StudentFilter"
+import { useSearchParams } from "react-router";
 
 function AreaList() {
     const [areas, setAreas] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const { selectedArea, setSelectedArea } = useStudentFilter()
+    const [searchParams, setSearchParams] = useSearchParams()
+
+    useEffect(() => {
+        const newParams = new URLSearchParams(searchParams);
+        newParams.delete('curso');
+        setSearchParams(newParams);
+    }, [selectedArea])
 
     useEffect(() => {
         getAreas()
