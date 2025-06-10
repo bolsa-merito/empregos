@@ -53,7 +53,7 @@ const router = createBrowserRouter([
                 element: <CompanyProfile/>
             },
             {
-                path: 'filtro-estudantes',
+                path: 'catalogo',
                 element: <FilterStudents/>
             }
         ]

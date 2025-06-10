@@ -3,10 +3,12 @@ import { useStudentFilter } from "@/features/company/hooks/StudentFilter";
 import { getCourses } from "@/features/company/services/fetchCourses";
 import FilterTag from "@/features/company/components/studentFilter/FilterTag";
 import { useNavigate } from "react-router";
+import { useSearchParams } from "react-router";
 
 function CourseFilter() {
     const { selectedArea } = useStudentFilter();
     const [ courses, setCourses]  = useState([]);
+    const [searchParams, setSearchParams] = useSearchParams()
 
     const navigate = useNavigate();
 
@@ -17,8 +19,8 @@ function CourseFilter() {
     }, [selectedArea]);
 
     // TODO criar a página que mostra os alunos filtrados
-    const redirect = () => {
-        navigate(`/company/students/${selectedArea.id}`);
+    const redirect = (courseId) => {
+        setSearchParams({ curso: courseId });
     }
 
     return (
@@ -27,7 +29,7 @@ function CourseFilter() {
             <ul className="flex flex-wrap gap-3 py-5">
                 {courses.map(course => (
                     <li key={course.id}>
-                        <FilterTag text={course.name} onClick={() => redirect()}/>
+                        <FilterTag text={course.name} onClick={() => redirect(course.id)} />
                     </li>
                 ))}
             </ul>
