@@ -1,19 +1,20 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Textarea from '@/app/components/ui/Inputs/Textarea';
 import Input from '@/app/components/ui/Inputs/Input';
 import Button from '@/app/components/ui/Buttons/Buttons';
-import PropTypes from 'prop-types';
 
-export function ProjectsForm({ onSave }) {
+export function ProjectsForm() {
   const [items, setItems] = useState([{ title: '', description: '', skills: '' }]);
   const [errors, setErrors] = useState([]);
+  const navigate = useNavigate();
 
   const handleChange = (index, field, value) => {
     const updated = items.map((item, i) =>
       i === index ? { ...item, [field]: value } : item
     );
     setItems(updated);
-    
+
     const newErrors = [...errors];
     if (newErrors[index]) {
       newErrors[index][field] = '';
@@ -44,10 +45,19 @@ export function ProjectsForm({ onSave }) {
     return newErrors.every(err => Object.keys(err).length === 0);
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
     if (validate()) {
-      onSave(items);
+      try {
+        console.log('Dados simulados:', items);
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        // Redireciona usando React Router
+        navigate('/');
+      } catch (error) {
+        console.error('Erro no envio:', error);
+        alert('Erro ao salvar os dados. Tente novamente.');
+      }
     }
   };
 
@@ -112,7 +122,3 @@ export function ProjectsForm({ onSave }) {
     </form>
   );
 }
-
-ProjectsForm.propTypes = {
-  onSave: PropTypes.func
-};
