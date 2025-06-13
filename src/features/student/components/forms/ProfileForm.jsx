@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Input from '@/app/components/ui/Inputs/Input';
 import Button from '@/app/components/ui/Buttons/Buttons';
+import PropTypes from 'prop-types';
 
 export function ProfileForm({ onSave }) {
   const [form, setForm] = useState({
@@ -122,3 +123,7 @@ export function ProfileForm({ onSave }) {
     </form>
   );
 }
+
+ProfileForm.propTypes = {
+  onSave: PropTypes.func,
+};

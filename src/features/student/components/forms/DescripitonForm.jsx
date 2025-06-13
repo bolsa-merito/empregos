@@ -2,16 +2,22 @@ import { useState } from 'react'
 import Textarea from '@/app/components/ui/Inputs/Textarea'
 import Input from '@/app/components/ui/Inputs/Input'
 import Button from '@/app/components/ui/Buttons/Buttons'
+import PropTypes from 'prop-types'; 
 
 export function DescriptionForm({ onSave }) {
   const [description, setDescription] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
+  const [errors, setErrors] = useState([])
+
+
 
   const handleSubmit = e => {
     e.preventDefault()
     onSave({ description, email, phone })
   }
+
+  
 
   return (
     <form
@@ -59,5 +65,9 @@ export function DescriptionForm({ onSave }) {
         </Button>
       </div>
     </form>
-  )
+  );
 }
+
+DescriptionForm.propTypes = {
+  onSave: PropTypes.func,
+};

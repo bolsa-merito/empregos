@@ -4,7 +4,7 @@ import { Outlet } from "react-router" // tem comportamento semelhante ao childre
 function StudentLayout() {
     return (
         <div className="w-full flex flex-col items-center">
-            <div className="w-full max-w-xs">
+            <div className="w-full md:max-w-screen max-w-xs">
                 <NavBar>
                     <NavBar.LinkHome redirectTo="/estudante/home">Home</NavBar.LinkHome>
                     <NavBar.LinkPerfil redirectTo="/estudante/perfil">Perfil</NavBar.LinkPerfil>
