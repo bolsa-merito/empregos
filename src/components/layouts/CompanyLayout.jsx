@@ -15,8 +15,11 @@ function CompanyLayout() {
                     <NavBar.LinkPerfil redirectTo="/empresa/perfil">Perfil</NavBar.LinkPerfil>
                     <NavBar.LinkMessages redirectTo="/empresa/mensagens">Mensagens</NavBar.LinkMessages>
                 </NavBar>
-                <div>
-                    <Outlet />
+                <div className="flex">
+                    <div className="flex flex-1 justify-center max-h-[90vh] overflow-y-scroll">
+                        <Outlet />
+                    </div>
+                    <div id="sideBar"></div>
                 </div>
             </div>
         </div>
