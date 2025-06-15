@@ -34,10 +34,10 @@ function Description() {
     );
 }
 
-function ShowMoreButton() {
+function ShowMoreButton({handleClick = () => {}}) {
     return (
-        <button className="px-3 py-2 rounded-lg bg-blue-500 text-white text-sm hover:bg-blue-600 transition">
-            Show more
+        <button onClick={handleClick} className="px-3 py-2 rounded-lg bg-blue-500 text-white text-sm hover:bg-blue-600 transition">
+            Ver mais
         </button>
     );
 }
@@ -46,9 +46,6 @@ function CompactDescription() {
     return (
         <div className="flex flex-col gap-2">
             <Description />
-            <div className="flex justify-end">
-                <ShowMoreButton />
-            </div>
         </div>
     );
 }
